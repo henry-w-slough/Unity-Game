@@ -70,20 +70,20 @@ public class PlayerMovement : MonoBehaviour
             Invoke(nameof(ResetJump), jumpCooldown);
         }
 
-        if (isWall)
-        {
-            rb.AddForce(transform.up * 1000f, ForceMode.Force);
-        }
-
 
 
         SpeedControl();
 
         // handle drag
         if (grounded)
+        {
             rb.linearDamping = groundDrag;
+        }
+            
         else
+        {
             rb.linearDamping = 0;
+        }
     }
 
 
@@ -142,9 +142,6 @@ public class PlayerMovement : MonoBehaviour
         rb.AddForce(transform.up * jumpForce, ForceMode.Impulse);
     }
 
-
-
-
     //need function to envoke in Update() to reset jump
     private void ResetJump()
     {
@@ -153,8 +150,4 @@ public class PlayerMovement : MonoBehaviour
 
 
 
-    private void StartWallRun()
-    {
-        
-    }
 }
