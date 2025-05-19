@@ -13,6 +13,7 @@ public class PlayerSliding : MonoBehaviour
     [Header("Components")]
     [SerializeField] private Rigidbody rb;
     [SerializeField] private Transform orientation;
+    [SerializeField] private Transform slideOrientation;
 
     float horizontalInput;
     float verticalInput;
@@ -21,7 +22,7 @@ public class PlayerSliding : MonoBehaviour
 
     private bool isSliding = false;
 
-    
+
 
     private void Update()
     {
@@ -33,19 +34,25 @@ public class PlayerSliding : MonoBehaviour
         {
             if (!isSliding)
             {
+                if (rb.linearVelocity != new Vector3(0, 0, 0))
+                {
+                    slideOrientation.rotation = orientation.rotation;
 
-                //calcualting move inputs before setting isSliding
-                //so you can slide in one direction per slide
-                horizontalInput = Input.GetAxisRaw("Horizontal");
-                verticalInput = Input.GetAxisRaw("Vertical");
+                    //calcualting move inputs before setting isSliding
+                    //so you can slide in one direction per slide
+                    horizontalInput = Input.GetAxisRaw("Horizontal");
+                    verticalInput = Input.GetAxisRaw("Vertical");
 
-                isSliding = true;
+                    isSliding = true;
+                }
+
             }
 
             // shortening player  
             playerScale = crouchScale;
-                // calculate movement direction  
-                moveDirection = orientation.forward * verticalInput + orientation.right * horizontalInput;
+
+            // calculate movement direction  
+            moveDirection = slideOrientation.forward * verticalInput + orientation.forward * horizontalInput;
             rb.AddForce(moveDirection.normalized * slideVelocity * 10f, ForceMode.Acceleration);
 
 
@@ -66,7 +73,7 @@ public class PlayerSliding : MonoBehaviour
 
 
 
-        // Fix: Correctly interpolate between current scale and target scale  
+        //lerping to crouched scale
         transform.localScale = Vector3.Lerp(transform.localScale, playerScale, Time.deltaTime * 10f);
     }
 }
