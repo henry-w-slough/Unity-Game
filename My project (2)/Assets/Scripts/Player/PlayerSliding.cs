@@ -7,6 +7,8 @@ public class PlayerSliding : MonoBehaviour
     [SerializeField] private KeyCode slideKey;
     [SerializeField] private float slideVelocity;
 
+    [SerializeField] private float crouchSpeed;
+
     [SerializeField] Vector3 crouchScale;
     [SerializeField] Vector3 standingScale;
 
@@ -15,65 +17,94 @@ public class PlayerSliding : MonoBehaviour
     [SerializeField] private Transform orientation;
     [SerializeField] private Transform slideOrientation;
 
-    float horizontalInput;
-    float verticalInput;
+    [SerializeField] private LayerMask groundLayer;
 
     Vector3 moveDirection;
 
     private bool isSliding = false;
+    private bool isCrouching = false;
+
+
+    private float horizontalInput;
+    private float verticalInput;
+
 
 
 
     private void Update()
     {
 
-        // sliding  
-        Vector3 playerScale = standingScale;
+
+        isSliding = false;
+
+        // ground check
+        bool grounded = Physics.Raycast(transform.position, Vector3.down, transform.localScale.y * 0.5f + 0.3f, groundLayer);
+
+
+
+
+        if (Input.GetKeyDown(slideKey))
+        {
+            
+        }
+
+
 
         if (Input.GetKey(slideKey))
         {
-            if (!isSliding)
+            //sliding if there is momentum in a certain direction
+            if (rb.linearVelocity != new Vector3(0, 0, 0))
             {
-                if (rb.linearVelocity != new Vector3(0, 0, 0))
-                {
-                    slideOrientation.rotation = orientation.rotation;
-
-                    //calcualting move inputs before setting isSliding
-                    //so you can slide in one direction per slide
-                    horizontalInput = Input.GetAxisRaw("Horizontal");
-                    verticalInput = Input.GetAxisRaw("Vertical");
-
-                    isSliding = true;
-                }
-
+                isSliding = true;
             }
 
-            // shortening player  
-            playerScale = crouchScale;
-
-            // calculate movement direction  
-            moveDirection = slideOrientation.forward * verticalInput + orientation.forward * horizontalInput;
-            rb.AddForce(moveDirection.normalized * slideVelocity * 10f, ForceMode.Acceleration);
-
-
-                
-            
-
-
-            
         }
 
-        //resetting player height if not sliding
-        else
+
+
+
+
+        if (!isSliding) {
+            transform.localScale = Vector3.Lerp(transform.localScale, standingScale, Time.deltaTime * 10f);
+        }
+
+
+
+        if (isSliding)
         {
-            isSliding = false;
-            playerScale = standingScale;
+            Debug.Log("sldiing");
+            Vector3 moveDirection = moveDirection = slideOrientation.forward * verticalInput + slideOrientation.right * horizontalInput;
+
+            Slide();
+            //adding force in move direction
+            rb.AddForce(moveDirection * slideVelocity * 10f, ForceMode.Force);
         }
 
+    }
 
 
 
-        //lerping to crouched scale
-        transform.localScale = Vector3.Lerp(transform.localScale, playerScale, Time.deltaTime * 10f);
+    void Crouch()
+    {
+        //shortening player
+        transform.localScale = Vector3.Lerp(transform.localScale, crouchScale, Time.deltaTime * 10f);
+    }
+
+
+    void Slide()
+    {
+        if (!isSliding)
+        {
+            horizontalInput = Input.GetAxisRaw("Horizontal");
+            verticalInput = Input.GetAxisRaw("Vertical");
+
+            slideOrientation.rotation = orientation.rotation;
+        }
+
+        //shortening player
+        transform.localScale = Vector3.Lerp(transform.localScale, crouchScale, Time.deltaTime * 10f);
+
+
+        
     }
 }

@@ -577,15 +577,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 20
   groundDrag: 8
-  jumpForce: 15
+  jumpForce: 20
   jumpCooldown: 0.25
   airMultiplier: 0.4
   walkSpeed: 0
   sprintSpeed: 0
   playerHeight: 1.5
-  whatIsGround:
+  groundLayer:
     serializedVersion: 2
-    m_Bits: 64
+    m_Bits: 0
   orientation: {fileID: 2056367515}
 --- !u!54 &1001043613
 Rigidbody:
@@ -722,11 +722,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   slideKey: 304
   slideVelocity: 5
+  crouchSpeed: 10
   crouchScale: {x: 1, y: 0.5, z: 1}
   standingScale: {x: 1, y: 1, z: 1}
   rb: {fileID: 1001043613}
   orientation: {fileID: 2056367515}
   slideOrientation: {fileID: 1711981497}
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!1 &1146934596
 GameObject:
   m_ObjectHideFlags: 0
