@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: c8fed92d16e6c61479b7b8137371211c
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 273148
+  packageName: Hollow Shapes 3D
+  packageVersion: 1.0.0
+  assetPath: Assets/Plugins/Shapes3D/Scripts/S3DEqToVertices.cs
+  uploadId: 636631

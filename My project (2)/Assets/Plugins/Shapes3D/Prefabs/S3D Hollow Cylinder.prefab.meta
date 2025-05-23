@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 4ecb23694196639478180ee1636078bb
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 273148
+  packageName: Hollow Shapes 3D
+  packageVersion: 1.0.0
+  assetPath: Assets/Plugins/Shapes3D/Prefabs/S3D Hollow Cylinder.prefab
+  uploadId: 636631

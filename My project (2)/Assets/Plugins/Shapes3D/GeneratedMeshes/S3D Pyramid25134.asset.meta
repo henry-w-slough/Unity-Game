@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 70d0f756c7db9eb41832e4c74bfc1d50
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 4300000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 273148
+  packageName: Hollow Shapes 3D
+  packageVersion: 1.0.0
+  assetPath: Assets/Plugins/Shapes3D/GeneratedMeshes/S3D Pyramid25134.asset
+  uploadId: 636631

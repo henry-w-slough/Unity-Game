@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: ebd1502741483064fbe83c7dd9816800
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 4300000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 273148
+  packageName: Hollow Shapes 3D
+  packageVersion: 1.0.0
+  assetPath: Assets/Plugins/Shapes3D/GeneratedMeshes/S3D Cone Tapered48406.asset
+  uploadId: 636631

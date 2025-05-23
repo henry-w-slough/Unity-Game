@@ -1,0 +1,256 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &6819371289088481413
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2002329199596781632}
+  - component: {fileID: 2129198028726650007}
+  - component: {fileID: 2933900950343635912}
+  - component: {fileID: 5902475836228057686}
+  - component: {fileID: 859144648138571431}
+  - component: {fileID: 8500650633426736597}
+  m_Layer: 0
+  m_Name: S3D Tri Prism
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2002329199596781632
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6819371289088481413}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &2129198028726650007
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6819371289088481413}
+  m_Mesh: {fileID: 4300000, guid: c9855bed6aa1ca44696b6b639b507652, type: 2}
+--- !u!23 &2933900950343635912
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6819371289088481413}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 8c51987193698164f97cf4884c489e04, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &5902475836228057686
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6819371289088481413}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300000, guid: c9855bed6aa1ca44696b6b639b507652, type: 2}
+--- !u!114 &859144648138571431
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6819371289088481413}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49049f98f8bad4d428d28868f095afe7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  completeMesh: {fileID: 8500650633426736597}
+  meshData:
+  - shapeName: 
+    shapeVertices:
+    - {x: 0.43301266, y: -0.25000006}
+    - {x: 0.000000103556474, y: 0.5}
+    - {x: -0.43301278, y: -0.24999987}
+    meshVertices:
+    - {x: 0.43301266, y: -0.5, z: -0.25000006}
+    - {x: 0.000000103556474, y: -0.5, z: 0.5}
+    - {x: -0.43301278, y: -0.5, z: -0.24999987}
+    meshTriangles: 000000000100000002000000
+    meshUV:
+    - {x: 0.99999994, y: 0.21132481}
+    - {x: 0.5000001, y: 1.0773503}
+    - {x: -0.000000068825514, y: 0.21132503}
+    alreadyHasTrisAndVerts: 0
+    flipNormals: 0
+  - shapeName: 
+    shapeVertices:
+    - {x: 0, y: 6}
+    - {x: 5, y: 0}
+    - {x: -2, y: 0}
+    meshVertices:
+    - {x: 0.43301266, y: -0.5, z: -0.25000006}
+    - {x: 0.43301266, y: 0.5, z: -0.25000006}
+    - {x: 0.000000103556474, y: -0.5, z: 0.5}
+    - {x: 0.000000103556474, y: 0.5, z: 0.5}
+    - {x: -0.43301278, y: -0.5, z: -0.24999987}
+    - {x: -0.43301278, y: 0.5, z: -0.24999987}
+    - {x: 0.43301266, y: -0.5, z: -0.25000006}
+    - {x: 0.43301266, y: 0.5, z: -0.25000006}
+    - {x: 0.43301266, y: -0.5, z: -0.25000006}
+    - {x: 0.43301266, y: 0.5, z: -0.25000006}
+    meshTriangles: 000000000100000002000000020000000100000003000000020000000300000004000000040000000300000005000000040000000500000006000000060000000500000007000000
+    meshUV:
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 0.62831855, y: 0}
+    - {x: 0.62831855, y: 1}
+    - {x: 1.2566371, y: 0}
+    - {x: 1.2566371, y: 1}
+    - {x: 1.8849556, y: 0}
+    - {x: 1.8849556, y: 1}
+    - {x: 2.5132742, y: 0}
+    - {x: 2.5132742, y: 1}
+    alreadyHasTrisAndVerts: 0
+    flipNormals: 0
+  - shapeName: 
+    shapeVertices:
+    - {x: 0.43301266, y: -0.25000006}
+    - {x: 0.000000103556474, y: 0.5}
+    - {x: -0.43301278, y: -0.24999987}
+    meshVertices:
+    - {x: 0.43301266, y: 0.5, z: -0.25000006}
+    - {x: 0.000000103556474, y: 0.5, z: 0.5}
+    - {x: -0.43301278, y: 0.5, z: -0.24999987}
+    meshTriangles: 020000000100000000000000
+    meshUV:
+    - {x: 0.99999994, y: 0.21132481}
+    - {x: 0.5000001, y: 1.0773503}
+    - {x: -0.000000068825514, y: 0.21132503}
+    alreadyHasTrisAndVerts: 0
+    flipNormals: 0
+  currentMesh:
+    shapeName: 
+    shapeVertices: []
+    meshVertices:
+    - {x: 0.43301266, y: 1, z: -0.25000006}
+    - {x: 0.000000103556474, y: 1, z: 0.5}
+    - {x: -0.43301278, y: 1, z: -0.24999987}
+    - {x: 0.43301266, y: 0, z: -0.25000006}
+    - {x: 0.43301266, y: 1, z: -0.25000006}
+    - {x: 0.000000103556474, y: 0, z: 0.5}
+    - {x: 0.000000103556474, y: 1, z: 0.5}
+    - {x: -0.43301278, y: 0, z: -0.24999987}
+    - {x: -0.43301278, y: 1, z: -0.24999987}
+    - {x: 0.43301266, y: 0, z: -0.25000006}
+    - {x: 0.43301266, y: 1, z: -0.25000006}
+    - {x: 0.43301266, y: 0, z: -0.25000006}
+    - {x: 0.43301266, y: 1, z: -0.25000006}
+    - {x: 0.43301266, y: 0, z: -0.25000006}
+    - {x: 0.000000103556474, y: 0, z: 0.5}
+    - {x: -0.43301278, y: 0, z: -0.24999987}
+    meshTriangles: 02000000010000000000000003000000040000000500000005000000040000000600000005000000060000000700000007000000060000000800000007000000080000000900000009000000080000000a0000000d0000000e0000000f000000
+    meshUV:
+    - {x: 0.99999994, y: 0.21132481}
+    - {x: 0.5000001, y: 1.0773503}
+    - {x: -0.000000068825514, y: 0.21132503}
+    - {x: 0, y: 0}
+    - {x: 0, y: 1}
+    - {x: 0.62831855, y: 0}
+    - {x: 0.62831855, y: 1}
+    - {x: 1.2566371, y: 0}
+    - {x: 1.2566371, y: 1}
+    - {x: 1.8849556, y: 0}
+    - {x: 1.8849556, y: 1}
+    - {x: 2.5132742, y: 0}
+    - {x: 2.5132742, y: 1}
+    - {x: 0.99999994, y: 0.21132481}
+    - {x: 0.5000001, y: 1.0773503}
+    - {x: -0.000000068825514, y: 0.21132503}
+    alreadyHasTrisAndVerts: 1
+    flipNormals: 0
+  selectedMeshIndex: 0
+--- !u!114 &8500650633426736597
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6819371289088481413}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69300949b69349642b8ca18209896f32, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pivotPoint: {x: 0, y: -0.5, z: 0}
+  scale: {x: 1, y: 1, z: 1}
+  s3DMesh: {fileID: 859144648138571431}
+  taperForTop: {x: 1, y: 1, z: 1}
+  taperForBottom: {x: 1, y: 1, z: 1}
+  vertex: 3
+  thickness: 0.1
+  rotateByPiRad: 0.16666667
+  hollow: 0
+  convergeBottom: 0
+  convergeTop: 0
+  converging: 0
+  sideRange: 1000
+  topCap: 0
+  bottomCap: 0
+  fullTopCap: 0
+  fullBottomCap: 0

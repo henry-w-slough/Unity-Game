@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 3fdfa31b77b69bd489d2c8f5e0a459a4
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 4300000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 273148
+  packageName: Hollow Shapes 3D
+  packageVersion: 1.0.0
+  assetPath: Assets/Plugins/Shapes3D/GeneratedMeshes/S3D Cone-55102.asset
+  uploadId: 636631

@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 98220e7e99209754ca6a6bcfb7e74c27
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 273148
+  packageName: Hollow Shapes 3D
+  packageVersion: 1.0.0
+  assetPath: Assets/Plugins/Shapes3D/Prefabs/S3D Hollow Polygon Prism.prefab
+  uploadId: 636631

@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 5a2cc57780ee43646a2de73803cdcd92
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 273148
+  packageName: Hollow Shapes 3D
+  packageVersion: 1.0.0
+  assetPath: Assets/Plugins/Shapes3D/Prefabs/S3D Hollow Rect Prism.prefab
+  uploadId: 636631

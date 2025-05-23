@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 47c4bb35c4df1cc46865ffcca3c11425
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 4300000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 273148
+  packageName: Hollow Shapes 3D
+  packageVersion: 1.0.0
+  assetPath: Assets/Plugins/Shapes3D/GeneratedMeshes/S3D Rect Prism-135830.asset
+  uploadId: 636631

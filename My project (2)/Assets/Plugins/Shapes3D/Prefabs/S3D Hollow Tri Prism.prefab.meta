@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 8c8fbb93d2aae3040a49014df890011c
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 273148
+  packageName: Hollow Shapes 3D
+  packageVersion: 1.0.0
+  assetPath: Assets/Plugins/Shapes3D/Prefabs/S3D Hollow Tri Prism.prefab
+  uploadId: 636631

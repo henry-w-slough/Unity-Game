@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: a3483e317e9986642a29ceb19e710b51
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 273148
+  packageName: Hollow Shapes 3D
+  packageVersion: 1.0.0
+  assetPath: Assets/Plugins/Shapes3D/Prefabs/S3D Hollow Sphere.prefab
+  uploadId: 636631

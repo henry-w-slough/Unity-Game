@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 23c9babcd0a70644cb3ff83174207203
+TextScriptImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 273148
+  packageName: Hollow Shapes 3D
+  packageVersion: 1.0.0
+  assetPath: Assets/Plugins/Shapes3D/LICENSE.md
+  uploadId: 636631

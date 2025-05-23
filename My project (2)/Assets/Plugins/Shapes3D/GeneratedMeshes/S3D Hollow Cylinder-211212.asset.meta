@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: faa2f33b60ed92d40a8874916d319fa0
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 4300000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 273148
+  packageName: Hollow Shapes 3D
+  packageVersion: 1.0.0
+  assetPath: Assets/Plugins/Shapes3D/GeneratedMeshes/S3D Hollow Cylinder-211212.asset
+  uploadId: 636631

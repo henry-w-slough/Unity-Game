@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: d8ec31ed2e43b1a4bb4e8ffed9a2ebb6
+TextScriptImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 273148
+  packageName: Hollow Shapes 3D
+  packageVersion: 1.0.0
+  assetPath: Assets/Plugins/Shapes3D/README.md
+  uploadId: 636631

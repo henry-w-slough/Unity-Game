@@ -1,18 +1,18 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Henry\\Documents\\GitHub\\Unity-Game\\My project (2)\\",
+  "WorkspaceRootPath": "C:\\Users\\Henry Slough\\Documents\\GitHub\\Unity-Game\\My project (2)\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D0F74257-F6B2-DCEA-FC51-AA11C694D4B0}|Assembly-CSharp.csproj|C:\\Users\\Henry\\Documents\\GitHub\\Unity-Game\\My project (2)\\assets\\scripts\\player\\playermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D0F74257-F6B2-DCEA-FC51-AA11C694D4B0}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\playermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D0F74257-F6B2-DCEA-FC51-AA11C694D4B0}|Assembly-CSharp.csproj|c:\\users\\henry slough\\documents\\github\\unity-game\\my project (2)\\assets\\scripts\\player\\sliding.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D0F74257-F6B2-DCEA-FC51-AA11C694D4B0}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\sliding.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D0F74257-F6B2-DCEA-FC51-AA11C694D4B0}|Assembly-CSharp.csproj|C:\\Users\\Henry\\Documents\\GitHub\\Unity-Game\\My project (2)\\assets\\scripts\\player\\mouselook.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D0F74257-F6B2-DCEA-FC51-AA11C694D4B0}|Assembly-CSharp.csproj|C:\\Users\\Henry Slough\\Documents\\GitHub\\Unity-Game\\My project (2)\\assets\\scripts\\player\\mouselook.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D0F74257-F6B2-DCEA-FC51-AA11C694D4B0}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\mouselook.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D0F74257-F6B2-DCEA-FC51-AA11C694D4B0}|Assembly-CSharp.csproj|c:\\users\\henry\\documents\\github\\unity-game\\my project (2)\\assets\\scripts\\player\\playersliding.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D0F74257-F6B2-DCEA-FC51-AA11C694D4B0}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\playersliding.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D0F74257-F6B2-DCEA-FC51-AA11C694D4B0}|Assembly-CSharp.csproj|C:\\Users\\Henry Slough\\Documents\\GitHub\\Unity-Game\\My project (2)\\assets\\scripts\\player\\playermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D0F74257-F6B2-DCEA-FC51-AA11C694D4B0}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\playermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,45 +22,45 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Sliding.cs",
+              "DocumentMoniker": "C:\\Users\\Henry Slough\\Documents\\GitHub\\Unity-Game\\My project (2)\\Assets\\Scripts\\Player\\Sliding.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\Sliding.cs",
+              "ToolTip": "C:\\Users\\Henry Slough\\Documents\\GitHub\\Unity-Game\\My project (2)\\Assets\\Scripts\\Player\\Sliding.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Player\\Sliding.cs",
+              "ViewState": "AgIAACMAAAAAAAAAAAAQwC8AAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-23T00:41:02.08Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "MouseLook.cs",
-              "DocumentMoniker": "C:\\Users\\Henry\\Documents\\GitHub\\Unity-Game\\My project (2)\\Assets\\Scripts\\Player\\MouseLook.cs",
+              "DocumentMoniker": "C:\\Users\\Henry Slough\\Documents\\GitHub\\Unity-Game\\My project (2)\\Assets\\Scripts\\Player\\MouseLook.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\MouseLook.cs",
-              "ToolTip": "C:\\Users\\Henry\\Documents\\GitHub\\Unity-Game\\My project (2)\\Assets\\Scripts\\Player\\MouseLook.cs",
+              "ToolTip": "C:\\Users\\Henry Slough\\Documents\\GitHub\\Unity-Game\\My project (2)\\Assets\\Scripts\\Player\\MouseLook.cs",
               "RelativeToolTip": "Assets\\Scripts\\Player\\MouseLook.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAQwC8AAAAlAAAAAAAAAA==",
+              "ViewState": "AgIAACoAAAAAAAAAAAAowC8AAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-19T21:57:23.884Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "PlayerMovement.cs",
-              "DocumentMoniker": "C:\\Users\\Henry\\Documents\\GitHub\\Unity-Game\\My project (2)\\Assets\\Scripts\\Player\\PlayerMovement.cs",
+              "DocumentMoniker": "C:\\Users\\Henry Slough\\Documents\\GitHub\\Unity-Game\\My project (2)\\Assets\\Scripts\\Player\\PlayerMovement.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\PlayerMovement.cs",
-              "ToolTip": "C:\\Users\\Henry\\Documents\\GitHub\\Unity-Game\\My project (2)\\Assets\\Scripts\\Player\\PlayerMovement.cs",
+              "ToolTip": "C:\\Users\\Henry Slough\\Documents\\GitHub\\Unity-Game\\My project (2)\\Assets\\Scripts\\Player\\PlayerMovement.cs",
               "RelativeToolTip": "Assets\\Scripts\\Player\\PlayerMovement.cs",
-              "ViewState": "AgIAAEkAAAAAAAAAAAAYwHYAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-11T03:08:13.005Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "PlayerSliding.cs",
-              "DocumentMoniker": "C:\\Users\\Henry\\Documents\\GitHub\\Unity-Game\\My project (2)\\Assets\\Scripts\\Player\\PlayerSliding.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\PlayerSliding.cs",
-              "ToolTip": "C:\\Users\\Henry\\Documents\\GitHub\\Unity-Game\\My project (2)\\Assets\\Scripts\\Player\\PlayerSliding.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Player\\PlayerSliding.cs",
-              "ViewState": "AgIAAEkAAAAAAAAAAAAgwGEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-11T02:58:52.915Z",
               "EditorCaption": ""
             }
           ]

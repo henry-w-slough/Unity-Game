@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: ccd5b9f99b226ea45bf4953b785ada87
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 273148
+  packageName: Hollow Shapes 3D
+  packageVersion: 1.0.0
+  assetPath: Assets/Plugins/Shapes3D/Prefabs/S3D Pyramid.prefab
+  uploadId: 636631

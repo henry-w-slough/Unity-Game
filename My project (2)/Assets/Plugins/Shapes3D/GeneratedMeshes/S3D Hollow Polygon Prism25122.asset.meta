@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 6c72ce3a3008a2a4bbd53aa472fda316
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 4300000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 273148
+  packageName: Hollow Shapes 3D
+  packageVersion: 1.0.0
+  assetPath: Assets/Plugins/Shapes3D/GeneratedMeshes/S3D Hollow Polygon Prism25122.asset
+  uploadId: 636631

@@ -5,6 +5,8 @@ using TMPro;
 
 public class PlayerMovementTutorial : MonoBehaviour
 {
+
+
     [Header("Movement")]
     public float moveSpeed;
 
@@ -13,16 +15,22 @@ public class PlayerMovementTutorial : MonoBehaviour
     public float jumpForce;
     public float jumpCooldown;
     public float airMultiplier;
-    bool readyToJump;
+    bool canJump;
 
     [HideInInspector] public float walkSpeed;
     [HideInInspector] public float sprintSpeed;
 
+
+
     [Header("Keybinds")]
     public KeyCode jumpKey = KeyCode.Space;
 
+
+
     [Header("Ground Check")]
+
     public float playerHeight;
+
     public LayerMask whatIsGround;
     bool grounded;
 
@@ -35,43 +43,53 @@ public class PlayerMovementTutorial : MonoBehaviour
 
     Rigidbody rb;
 
+
+
+
+
     private void Start()
     {
         rb = GetComponent<Rigidbody>();
         rb.freezeRotation = true;
+        rb.interpolation = RigidbodyInterpolation.Interpolate; //smoothes movement for camera
 
-        readyToJump = true;
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
+
+        canJump = true;
     }
+
+
 
     private void Update()
     {
         // ground check
         grounded = Physics.Raycast(transform.position, Vector3.down, playerHeight * 0.5f + 0.3f, whatIsGround);
 
-        MyInput();
+        GetInput();
         SpeedControl();
 
         // handle drag
         if (grounded)
-            rb.drag = groundDrag;
+            rb.linearDamping = groundDrag;
         else
-            rb.drag = 0;
+            rb.linearDamping = 0;
     }
 
     private void FixedUpdate()
     {
-        MovePlayer();
+        Movement();
     }
 
-    private void MyInput()
+    private void GetInput()
     {
         horizontalInput = Input.GetAxisRaw("Horizontal");
         verticalInput = Input.GetAxisRaw("Vertical");
 
         // when to jump
-        if (Input.GetKey(jumpKey) && readyToJump && grounded)
+        if (Input.GetKey(jumpKey) && canJump && grounded)
         {
-            readyToJump = false;
+            canJump = false;
 
             Jump();
 
@@ -79,7 +97,7 @@ public class PlayerMovementTutorial : MonoBehaviour
         }
     }
 
-    private void MovePlayer()
+    private void Movement()
     {
         // calculate movement direction
         moveDirection = orientation.forward * verticalInput + orientation.right * horizontalInput;
@@ -95,25 +113,25 @@ public class PlayerMovementTutorial : MonoBehaviour
 
     private void SpeedControl()
     {
-        Vector3 flatVel = new Vector3(rb.velocity.x, 0f, rb.velocity.z);
+        Vector3 flatVel = new Vector3(rb.linearVelocity.x, 0f, rb.linearVelocity.z);
 
         // limit velocity if needed
         if (flatVel.magnitude > moveSpeed)
         {
             Vector3 limitedVel = flatVel.normalized * moveSpeed;
-            rb.velocity = new Vector3(limitedVel.x, rb.velocity.y, limitedVel.z);
+            rb.linearVelocity = new Vector3(limitedVel.x, rb.linearVelocity.y, limitedVel.z);
         }
     }
 
     private void Jump()
     {
         // reset y velocity
-        rb.velocity = new Vector3(rb.velocity.x, 0f, rb.velocity.z);
+        rb.linearVelocity = new Vector3(rb.linearVelocity.x, 0f, rb.linearVelocity.z);
 
         rb.AddForce(transform.up * jumpForce, ForceMode.Impulse);
     }
     private void ResetJump()
     {
-        readyToJump = true;
+        canJump = true;
     }
 }

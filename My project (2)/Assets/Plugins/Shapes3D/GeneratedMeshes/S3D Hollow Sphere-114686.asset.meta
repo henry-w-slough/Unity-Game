@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: c9c93bee8e059f8438a2f83205314bbb
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 4300000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 273148
+  packageName: Hollow Shapes 3D
+  packageVersion: 1.0.0
+  assetPath: Assets/Plugins/Shapes3D/GeneratedMeshes/S3D Hollow Sphere-114686.asset
+  uploadId: 636631

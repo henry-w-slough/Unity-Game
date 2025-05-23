@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 8c51987193698164f97cf4884c489e04
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 273148
+  packageName: Hollow Shapes 3D
+  packageVersion: 1.0.0
+  assetPath: Assets/Plugins/Shapes3D/S3D Default Material.mat
+  uploadId: 636631

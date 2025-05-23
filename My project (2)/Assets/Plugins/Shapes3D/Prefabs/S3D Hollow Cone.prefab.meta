@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: fa4e6da2e248d7f4aa9f02c159cee796
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 273148
+  packageName: Hollow Shapes 3D
+  packageVersion: 1.0.0
+  assetPath: Assets/Plugins/Shapes3D/Prefabs/S3D Hollow Cone.prefab
+  uploadId: 636631

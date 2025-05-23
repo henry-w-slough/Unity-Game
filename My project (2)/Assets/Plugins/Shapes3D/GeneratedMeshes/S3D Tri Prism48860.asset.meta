@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: db7724c0c1e5898449b1f47bd42e2fe4
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 4300000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 273148
+  packageName: Hollow Shapes 3D
+  packageVersion: 1.0.0
+  assetPath: Assets/Plugins/Shapes3D/GeneratedMeshes/S3D Tri Prism48860.asset
+  uploadId: 636631

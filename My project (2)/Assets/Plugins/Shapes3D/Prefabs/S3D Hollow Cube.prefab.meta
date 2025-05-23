@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 40b9bd2f64f17574abd6f4b1de5bdcbf
+PrefabImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 273148
+  packageName: Hollow Shapes 3D
+  packageVersion: 1.0.0
+  assetPath: Assets/Plugins/Shapes3D/Prefabs/S3D Hollow Cube.prefab
+  uploadId: 636631
