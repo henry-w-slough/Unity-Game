@@ -6,7 +6,6 @@ public class MouseLook : MonoBehaviour
     [Header("Components")]
 
     public Transform orientation;
-    public Transform playerCamPosition;
 
 
 
@@ -36,7 +35,6 @@ public class MouseLook : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.position = playerCamPosition.position; 
         
         //getting mouse input in a float value
         float mouseX = Input.GetAxis("Mouse X") * sensitivity; 

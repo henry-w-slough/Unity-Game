@@ -42,7 +42,7 @@ public class Sliding : MonoBehaviour
         // ground check
         bool grounded = Physics.Raycast(transform.position, Vector3.down, playerHeight * 0.5f + 1f, groundLayer);
 
-
+        
         if (!grounded)
         {
             isSliding = false;
