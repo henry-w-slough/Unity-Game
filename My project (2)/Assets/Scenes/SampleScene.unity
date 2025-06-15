@@ -767,11 +767,10 @@ GameObject:
   - component: {fileID: 1001043617}
   - component: {fileID: 1001043616}
   - component: {fileID: 1001043615}
-  - component: {fileID: 1001043613}
   - component: {fileID: 1001043614}
+  - component: {fileID: 1001043613}
   - component: {fileID: 1001043612}
   - component: {fileID: 1001043618}
-  - component: {fileID: 1001043619}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -791,19 +790,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1dbeeaa87b32dbc4b934f49787d37808, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 20
-  groundDrag: 9
-  jumpForce: 20
-  jumpCooldown: 0.25
-  airMultiplier: 0.4
-  walkSpeed: 0
-  sprintSpeed: 0
-  jumpKey: 32
-  playerHeight: 1.5
-  groundLayer:
-    serializedVersion: 2
-    m_Bits: 64
-  orientation: {fileID: 2056367515}
+  moveSpeed: 15
+  groundDrag: 10
+  isSliding: 0
 --- !u!54 &1001043613
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -916,7 +905,7 @@ Transform:
   m_GameObject: {fileID: 1001043611}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 7.65, z: 0}
+  m_LocalPosition: {x: 0, y: 2.61, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -934,38 +923,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1001043611}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 35eb52f746e98ea4b81c1fe11befc149, type: 3}
+  m_Script: {fileID: 11500000, guid: 7fd62fd1ca754e646aede39cd77cf5d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  slideKey: 304
-  slideVelocity: 10
-  crouchSpeed: 5
-  crouchHeight: 0.5
-  standHeight: 1
-  rb: {fileID: 1001043613}
-  orientation: {fileID: 2056367515}
-  slideOrientation: {fileID: 1711981497}
-  groundLayer:
-    serializedVersion: 2
-    m_Bits: 64
---- !u!114 &1001043619
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1001043611}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7b63c75231c3bbf4a95ba10537f2e02c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  wallLayer:
-    serializedVersion: 2
-    m_Bits: 128
-  rb: {fileID: 1001043613}
-  orientation: {fileID: 2056367515}
-  maxWallDistance: 1
+  jumpForce: 10
 --- !u!1 &1132057547
 GameObject:
   m_ObjectHideFlags: 0
@@ -980,7 +941,7 @@ GameObject:
   - component: {fileID: 1132057550}
   - component: {fileID: 1132057549}
   - component: {fileID: 1132057548}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: Slide5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1621,7 +1582,7 @@ GameObject:
   - component: {fileID: 1759300972}
   - component: {fileID: 1759300971}
   - component: {fileID: 1759300970}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: Slide3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2221,7 +2182,7 @@ GameObject:
   - component: {fileID: 5192974126612532471}
   - component: {fileID: 4797658025864301525}
   - component: {fileID: 5982531266916712367}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: Slide10
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2235,7 +2196,7 @@ MeshFilter:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2036891470047806980}
-  m_Mesh: {fileID: 4300000, guid: ac2a379bac6bafc46934ce0f00c665da, type: 2}
+  m_Mesh: {fileID: 4300000, guid: 79e6fa7b2bfe7fb4888057a569a108a5, type: 2}
 --- !u!114 &4797658025864301525
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2578,7 +2539,7 @@ MeshCollider:
   serializedVersion: 5
   m_Convex: 0
   m_CookingOptions: 30
-  m_Mesh: {fileID: 4300000, guid: ac2a379bac6bafc46934ce0f00c665da, type: 2}
+  m_Mesh: {fileID: 4300000, guid: 79e6fa7b2bfe7fb4888057a569a108a5, type: 2}
 --- !u!4 &5404826186070318502
 Transform:
   m_ObjectHideFlags: 0

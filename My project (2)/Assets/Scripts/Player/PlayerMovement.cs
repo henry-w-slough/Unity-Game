@@ -3,45 +3,26 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 
-public class PlayerMovementTutorial : MonoBehaviour
+
+//This class is used as THE reference for all other movement classes. It holds variables to see if the player is crouching, sliding, etc.
+//so each class with that variable doesn't have to be changed individually every time the player does something.
+
+
+public class PlayerMovement : MonoBehaviour
 {
+    [Header("Components")]
 
-
-    [Header("Movement")]
-    public float moveSpeed;
-
-    public float groundDrag;
-
-    public float jumpForce;
-    public float jumpCooldown;
-    public float airMultiplier;
-    bool canJump;
-
-    [HideInInspector] public float walkSpeed;
-    [HideInInspector] public float sprintSpeed;
+    private Rigidbody rb;
+    private Transform orientation;
 
 
 
-    [Header("Keybinds")]
-    public KeyCode jumpKey = KeyCode.Space;
+    [Header("Player")]
 
+    [SerializeField] private float moveSpeed;
+    [SerializeField] private float groundDrag;
 
-
-    [Header("Ground Check")]
-
-    public float playerHeight;
-
-    public LayerMask groundLayer;
-    bool grounded;
-
-    public Transform orientation;
-
-    float horizontalInput;
-    float verticalInput;
-
-    Vector3 moveDirection;
-
-    Rigidbody rb;
+    public bool isSliding;
 
 
 
@@ -50,66 +31,50 @@ public class PlayerMovementTutorial : MonoBehaviour
     private void Start()
     {
         rb = GetComponent<Rigidbody>();
-        rb.freezeRotation = true;
-        rb.interpolation = RigidbodyInterpolation.Interpolate; //smoothes movement for camera
+        orientation = GameObject.Find("Orientation").transform;
 
-        Cursor.lockState = CursorLockMode.Locked;
-        Cursor.visible = false;
-
-        canJump = true;
+        rb.interpolation = RigidbodyInterpolation.Interpolate;
     }
+
+
 
 
 
     private void Update()
     {
-        // ground check
-        grounded = Physics.Raycast(transform.position, Vector3.down, playerHeight * 0.5f + 0.3f, groundLayer);
+        bool grounded = Physics.Raycast(transform.position, Vector3.down, transform.localScale.y * 0.5f + 1f);
 
-        GetInput();
-        SpeedControl();
-
-        // handle drag
         if (grounded)
-            rb.linearDamping = groundDrag;
-        else
-            rb.linearDamping = 0;
-    }
-
-    private void FixedUpdate()
-    {
-        Movement();
-    }
-
-    private void GetInput()
-    {
-        horizontalInput = Input.GetAxisRaw("Horizontal");
-        verticalInput = Input.GetAxisRaw("Vertical");
-
-        // when to jump
-        if (Input.GetKey(jumpKey) && canJump && grounded)
         {
-            canJump = false;
-
-            Jump();
-
-            Invoke(nameof(ResetJump), jumpCooldown);
+            Move();
         }
     }
 
-    private void Movement()
+
+
+
+    private void Move()
     {
-        // calculate movement direction
-        moveDirection = orientation.forward * verticalInput + orientation.right * horizontalInput;
+        //GROUND MOVEMENT //
+        float horizontalInput = Input.GetAxisRaw("Horizontal");
+        float verticalInput = Input.GetAxisRaw("Vertical");
 
-        // on ground
-        if (grounded)
-            rb.AddForce(moveDirection.normalized * moveSpeed * 10f, ForceMode.Force);
+        //getting move direction based on facing direction and input direction
+        Vector3 moveDirection = orientation.forward * verticalInput + orientation.right * horizontalInput;
 
-        // in air
-        else if (!grounded)
-            rb.AddForce(moveDirection.normalized * moveSpeed * 10f * airMultiplier, ForceMode.Force);
+        //pushing rb based on move direction normalized times movement speed, meaning player goes movement speed.
+        rb.AddForce(moveDirection.normalized * moveSpeed, ForceMode.Force);
+
+        //controlling the speed of the player so he doesn't sonic
+        SpeedControl();
+
+        rb.linearDamping = groundDrag;
     }
+
+
+
+
+
 
     private void SpeedControl()
     {
@@ -121,17 +86,5 @@ public class PlayerMovementTutorial : MonoBehaviour
             Vector3 limitedVel = flatVel.normalized * moveSpeed;
             rb.linearVelocity = new Vector3(limitedVel.x, rb.linearVelocity.y, limitedVel.z);
         }
-    }
-
-    private void Jump()
-    {
-        // reset y velocity
-        rb.linearVelocity = new Vector3(rb.linearVelocity.x, 0f, rb.linearVelocity.z);
-
-        rb.AddForce(transform.up * jumpForce, ForceMode.Impulse);
-    }
-    private void ResetJump()
-    {
-        canJump = true;
     }
 }
